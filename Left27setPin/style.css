@@ -3,9 +3,15 @@
   margin: 0;
   padding: 0;
 }
-
-video
+.greeting_video
 {
+  width: 100%;
+  height: 100%;
+}
+.video1
+{
+  display: block;
+  width: 100%;
   transform: scale(0.4);
   border: none;
   outline: none;
@@ -14,8 +20,6 @@ video
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: 1;
   mask-image: radial-gradient(white, black);
   backface-visibility: hidden;
@@ -27,11 +31,13 @@ video
 .video-wrapper {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100%; /*수정*/
 }
 .videoCover
-{  transform: scale(0.4);
+{ 
+  transform: scale(0.4);
   position: absolute;
+  display: block;
   width: 100%;
   height: 100%;
   top: 0;
@@ -43,10 +49,11 @@ video
 /* text position*/
 .txt_wrap
 {
+  display: block;
   position: absolute;
   z-index: 30;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .txt
 {
@@ -79,4 +86,60 @@ video
   right: 6%;
   top: 50%;
   transform: translateY(-30%);
+}
+
+.txt_center{visibility: hidden;}
+.videoCover2{display: none;}
+#greeting_wrap2{display: none;}
+
+@media (max-width: 1024px) {
+  .video1 {display: none;}
+  .videoCover{display: none;}
+  .txt_wrap{display: none;}
+  #greeting_wrap2{display: block; position: relative; margin: 0 15px 0 15px;}
+  .greeting_video2
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .txt_wrap
+  {
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    height: 100%; /*수정*/
+  }
+  .txt_top2
+  {
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  }
+  .txt_top2 span:nth-child(2) {display: block;}
+  .video2 
+  {
+    width: 100%; height: 100%;  
+    mask-image: radial-gradient(white, black);
+    backface-visibility: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .videoCover2{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+
+
+  .txt_center{visibility: visible; font-size: 45px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color:#FFF }
+  .txt_left{visibility: hidden;}
+  .txt_right{visibility: hidden;}
 }

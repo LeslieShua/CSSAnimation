@@ -1,0 +1,55 @@
+  *
+  {
+      padding: 0;
+      margin: 0;
+  }
+
+  .m-scroll {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 1s ease;
+  }
+  
+  .m-scroll > h1 {
+    display: flex;
+    position: relative;
+    animation: scrollText 20s infinite linear;
+    justify-content: space-around;
+  }
+  
+  .m-scroll h1 {
+    margin: 0;
+    font-size: clamp(5rem, 15vw, 8.75rem);
+    color: RGB(168, 126, 110);
+  }
+  
+  .m-scroll a {
+    text-decoration:none;
+    color:RGB(168, 126, 110);
+    opacity: 0.2;
+  }
+  
+  @keyframes scrollText {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+
+
+  /* 부가 기능 
+  .m-scroll__title a:hover {
+    -webkit-text-stroke: 1px rgb(65, 150, 40);
+    color: transparent;
+  }
+  
+  div:hover {
+    animation-play-state: paused;
+  } */
+

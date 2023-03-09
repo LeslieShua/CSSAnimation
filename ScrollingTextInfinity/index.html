@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Banner Text Scrolling Animation2</title>
+    </head>
+<body>
+    <style>
+        .tit_text{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: calc(100% - 2rem); /*100%에서 5rem을 뺀 값*/
+            color:RGB(168, 126, 110);
+            font-size: clamp(1.375rem, 5vw, 2.5rem); /* 최소값 1.375rem, 선호값 , 최대값 2.5rem*/
+        }
+    </style>
+
+    <div style="padding: 100px;"></div>
+
+
+        <div class="m-scroll">
+
+            <h1>
+              <a href="/"><p>A small thing has made a big things.  A small thing has made a big things.</p></a>
+            </h1>
+         
+            <h1>
+            <a href="/"><p>A small thing has made a big things.  A small thing has made a big things.</p></a>
+            </h1>
+  
+            <div class="tit_text"><h3>INSTAGRAM</h3></div>
+        </div>
+
+        
+      
+
+</body>
+</html>

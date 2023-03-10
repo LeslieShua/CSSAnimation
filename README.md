@@ -3,7 +3,7 @@
 ## ScrollMagicPin
 -Demo
   1. https://dapper-kringle-38a1dd.netlify.app/
-  -
+  - ScrollMagic 라이브러리 사용
   
 ## ScrollingTextInfinity
 -Demo

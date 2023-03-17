@@ -1,9 +1,11 @@
 # CSSAnimation
+![HEROPY](https://r1.community.samsung.com/t5/image/serverpage/image-id/682142iFCD12CD9BDD18BFA/image-size/large?v=v2&px=999)
+
 
 ## ScrollMagicPin
 -Demo
   1. https://dapper-kringle-38a1dd.netlify.app/
-  -
+  - ScrollMagic 라이브러리 사용
   
 ## ScrollingTextInfinity
 -Demo

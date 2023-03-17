@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GSAP -->
+    <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css">
+    <!-- Include ScrollMagic CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/scrollmagic/uncompressed/ScrollMagic.css">
+    <!-- Include ScrollMagic debug indicator -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>HorizontalScroll</title>
+</head>
+<body>
+  <!-- 990 -->
+<style>
+.col img
+{
+  /* max-width: 100%; */
+  /* min-width: 100%; 1200이하일때 120%?*/
+  height: auto;
+  width: 36vw;
+  /* height: 70vh; */
+  image-rendering: -webkit-optimize-contrast !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  margin: 0 auto;
+  /* margin: 1em; */
+  border: none;
+  background-color: black;
+}
+
+
+ .factsContainer_sm {
+  display: flex;
+  width: 365vw;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+ .sec0
+ {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ }
+.sec1
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+ .sec2
+ {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+ }
+
+ 
+</style>
+
+
+<div id="panels" >
+<div class="txt">
+start
+</div>
+</div>
+
+
+
+  <!--  style="background-color: black;"  anim -->
+<div class="wrapper">
+
+  <div class="container scrollx">
+    <div class="factsContainer_sm" style=" position: relative;">
+
+      <section class="sec0 pin" style="background-color: brown;">
+          <div class="col">
+            <img src="img/section02_01.png"></img>
+          </div>
+          <div class="col" style="transform: translate(-85%, 36.6%);">
+            <img src="img/section02_02.png"></img>
+          </div>
+      </section>
+
+      
+      <section class="sec1 pin" style="background-color: green;">
+
+        <div class="col" style="transform: translateX(-32%);">
+            <img src="img/section02_03.png"></img>
+        </div>
+        <div class="col" style="transform: translate(20%, -36.4%);">
+            <img src="img/section02_04.png"></img>
+        </div>
+
+      </section>
+      <section class="sec2 pin">
+          <div class="col" style="transform: translate(-65%, 36.6%);">
+              <img src="img/section02_05.png"></img>
+          </div>
+          <div class="col" style="transform: translate(-15%);">
+            <img src="img/section02_06.png"></img>
+        </div>
+      </section>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+
+
+
+<div id="panels" >
+<div class="txt">
+end
+</div>
+</div>
+      
+
+
+
+
+
+  <!-- GSAP -->
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script type="module" src="./script.js"></script>
+
+
+</body>
+</html>
+
+
+
+      <!-- 진척도
+        <svg viewBox="0 0 900 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z" fill="#D9D9D9"/>
+          <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="10">
+          <path d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z" fill="#D9D9D9"/>
+          </mask>
+          <g mask="url(#mask0_0_1)">
+          <rect class="mask" y="-49" height="99" fill="black"/>
+          </g>
+          </svg> -->
+
+
+
+
+
+
+          <!-- /* max-width: 100% - 상위 컨테이너의 너비를 초과하지 않도록 하여 오버플로를 방지 */
+          /* height: auto - 종횡비가 유지되고 이미지가 컨테이너 너비에 비례하여 크기가 조정 
+          즉, 종횡비와 컨테이너의 너비를 기준으로 이미지의 높이를 자동으로 계산
+            display: block - 이미지가 블록 수준 요소로 처리되어 컨테이너의 전체 너비를 차지하도록 합니다.
+            margin: 0 auto: 이 속성은 이미지를 컨테이너 내에서 수평으로 중앙에 배치합니다.
+         
+          object-fit: cover: 이 속성은 이미지가 종횡비를 유지하면서 컨테이너를 채우도록 합니다.
+          그러나 종횡비가 컨테이너와 일치하지 않으면 이미지의 일부가 잘릴 수 있습니다.
+        
+          object-fit: contains: 이 속성은 가로세로 비율을 유지하면서 컨테이너에 맞게 이미지 크기를 조정합니다.
+           컨테이너의 종횡비가 이미지와 일치하지 않으면 이미지 주변에 빈 공간이 생길 수 있습니다.
+         */ -->

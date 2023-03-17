@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap");
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Poppins";
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.slide_cont {
+  color: white;
+}
+
+
+
+
+/* 공통 */
+/* 768이하에선 더작음 참고 */
+.mar15{margin-right: 15px;}
+.num /*01*/
+{
+  z-index: 10;
+  letter-spacing: -0.01em;
+  color: white;
+  opacity: 1;
+  opacity: 0.07;
+  font-size: 14vw;
+  font-weight: 700;
+  position: absolute;
+  transform: translateY(-15%);
+}
+.bTitle
+{
+  z-index: 10;
+  display: inline-block;
+  border-bottom: 3px solid white;
+  font-size: 4vw;
+  font-weight: 600;
+}
+.sTitle
+{
+  color:white;
+  font-size: clamp(1.5vw, 1.5vw, 1rem);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.sTitle2 /*가로*/
+{
+  color:white;
+  font-size: clamp(1.5vw, 1.5vw, 1rem);
+}
+/* 크리에이터 파트너십 */
+.mo_tit
+{
+  position: absolute;
+  left: 50.6%;
+  top: 11.5%;
+}
+.mo_tit:last-child {
+  top: 13%;
+}
+.nw1 {left: 7%;}
+.business_txt1
+{
+  position: absolute;
+  top: 0;
+  left: 62.2%;
+}
+/* 마케팅 솔루션 */
+.word_f .word1
+{
+  position: absolute;
+  left: 33%;
+  top: 28.2%;
+}
+.nw2 {right: 1%;}
+.business_txt2
+{
+  position: absolute;
+  top: 20%;
+  left: 34.5%;
+}
+/* IP사업 */
+.word_f .word2
+{
+  position: absolute;
+  right: 23%;
+  top: 47.5%;
+}
+.business_txt3
+{
+  position: absolute;
+  top: 32.4%;
+  right: 19.5%;
+}
+/* 프로덕션 */
+.word_f .word3
+{
+  position: absolute;
+  right: 51.1%;
+  top: 61.1%;
+}
+.nw4 {right: 1%;}
+.business_txt4
+{
+  position: absolute;
+  bottom: 44.77%;
+  left: 34%;
+}
+/* 커머스 */
+.word_f .word4
+{
+  position: absolute;
+  right: 34.5%;
+  bottom: 24.3%;
+}
+.nw5
+{
+  left: 1%;
+}
+.business_txt5
+{
+  position: absolute;
+  bottom: 31%;
+  right: 34.5%;
+}
+/* 게임·크립토 */
+.word_f .word5
+{
+  position: absolute;
+  left: 23%;
+  bottom: 4.2%;
+}
+.nw6
+{
+  right: 19.5%;
+}
+.business_txt6
+{
+  position: absolute;
+  bottom: 20.2%;
+  left: 19.35%;
+}
+
+/* bsiness */
+.bsiness
+{
+  text-align: center;
+  padding: 15vw 0 10vw 0;
+  color: white;
+  background-color: black;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+}
+
+
+/* txt */
+.txt
+{
+  height: auto;
+  background-color: rgb(48, 42, 42);
+  height: 100vh;
+  color: white; display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
